@@ -195,12 +195,12 @@
                     }).addTo(map);
 
 
-                    var icon = L.icon({
-                        iconUrl: markerImg
-                    });
+                    // var icon = L.icon({
+                    //     iconUrl: markerImg
+                    // });
 
                     marker = new L.marker([lat, lng], {
-                        icon: icon
+                        //icon: icon
                     })
                     .bindPopup(title)
                     .addTo(map);

@@ -282,9 +282,9 @@ class InitiativeController extends Controller
         $rules['start_date'] = 'required|date|before:end_date';
         $rules['end_date'] = 'required|date|after:start_date';
         $rules['description'] = 'required';
-        $rules['latitude'] = 'required|numeric';
-        $rules['longitude'] = 'required|numeric';
-        $rules['address'] = 'required|max:255';
+        // $rules['latitude'] = 'required|numeric';
+        // $rules['longitude'] = 'required|numeric';
+        // $rules['address'] = 'required|max:255';
         
 
         $validator = Validator::make($request->all(), $rules);
@@ -359,7 +359,7 @@ class InitiativeController extends Controller
         $rules['description'] = 'required';
         // $rules['latitude'] = 'required|numeric';
         // $rules['longitude'] = 'required|numeric';
-        // $rules['address'] = 'required|max:255';
+        //$rules['address'] = 'required|max:255';
         
 
         $validator = Validator::make($request->all(), $rules);
